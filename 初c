@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define CLO 520
+#include <string.h>
+int main()
+{
+	const int num = 10;
+	printf("num = %d\n", num);
+	int n = CLO;
+		printf("n = %d\n", n);
+
+		enum XX
+		{
+			//依次列举 枚举常量
+		};
+		char arr[] = "hello  word";
+		char arr1[] = "cbc";
+		char arr2[] = { 'a','b','c','\0'};
+		printf("arr1 = %s\n", arr1);
+		printf("arr2 = %s\n", arr2);//字符串打印/s
+		//字符串  "字符串"  '字符'字符串在结尾隐藏一个字符\0
+		int len = strlen("abcdefg");//string length
+		printf("len = %d\n", len);//strlen未定义加头文件<#include<string.h>>
+		printf("len = %d\n", strlen(arr1));
+		printf("len = %d\n", strlen(arr2));//\0不加打印出来是随机值
+	return 0;
+}
+//const修饰常变量num=20   const int num = 10 只能输出10
+//#define 定义标识常量
