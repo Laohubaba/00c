@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{//转义字符 转变\? \n 等转义字符的意思使其打印不出来 加\进行转意
+	printf("%c\n", '\'');
+	//printf("%c\n", '\'');%c打印单个字符
+	printf("%d\n", 100);
+	//printf("%d\n", 100);%d打印整型
+	printf("%s\n", "abc");
+	//printf("%s\n", 'abc');%s打印一串字符
+	//打印指定格式%
+	printf("\a\a");
+
+	//\ddd     \xdd
+	printf("%d\n", '\130');
+	printf("%c\n", '\130');
+	//printf("%c\n", '\130');X是--ASCII码值是88
+	//printf("%d\n", '\130');八进制转十进制
+	printf("%c\n", '\x30');//十六进制
+	printf("%d\n", strlen("c:\test\328\test.c"));
+	return 0;
+}
