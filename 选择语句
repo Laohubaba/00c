@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+int main()
+{
+	int input = 0;//输入值
+	printf("胡文鹏帅不帅（1/0):");
+	scanf("%d", &input);
+	if (input == 1)
+		printf("帅的批爆\n");
+	else
+		printf("丑不拉几尼\n");
+	return 0;
+}
