@@ -1,0 +1,32 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int F(int x, int y)
+{
+	int z = 0;
+	z = x + y;
+	return z;//函数形式
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf("%d%d", &a, &b);
+	int sum = F(a, b);
+	printf("%d\n", sum);
+
+
+
+
+
+
+	//数组：一组相同类型的元素的集合
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 }; 
+	//char ch[5] = { 'a','b','c' };//不完全初始化,剩余默认为\0
+	int i = 0;
+	while (i < 10)
+	{
+		printf("%d", arr[i]);
+		i++;
+	}
+	return 0;
+}
