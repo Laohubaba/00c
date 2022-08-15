@@ -1,0 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int day = 0;
+	while (day < 300)//for循环也是可以的
+		{
+			printf("滑滑板%d\n",day);
+			day++;
+		}
+		if (day == 300)
+		{
+			printf("出大乱\n");
+		}
+
+
+	return 0;
+}
