@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	//int a = 9 / 2;
+	float a = 9 / 2.0;
+	printf("a = %lf\n", a);
+	int c = 1;
+	int b = c << 1;//<<>>位移操作符
+	printf("b = %d\n", b);
+	int f = 0;
+	printf("%d\n", !f);//!非0为真  0  1  真假命题 ！ 逻辑反操作符
+	//单目操作符：！ - + & sizeof~ -- ++ *
+	int ch[20] = { 2 };
+	printf("%d\n", sizeof(ch));//计算数组的总大小，单位是字节
+
+	   
+
+	return 0;
+}
