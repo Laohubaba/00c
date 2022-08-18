@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+	//int a = 9 / 2;
+	float a = 9 / 2.0;
+	printf("a = %lf\n", a);
+	int c = 1;
+	int b = c << 1;//<<>>位移操作符
+	printf("b = %d\n", b);
+	int f = 0;
+	printf("%d\n", !f);//!非0为真  0  1  真假命题 ！ 逻辑反操作符
+	//单目操作符：！ - + & sizeof~ -- ++ *
+	int ch[20] = { 2 };
+	printf("%d\n", sizeof(ch));//计算数组的总大小，单位是字节
+	int h = 10;
+	int j = ++h;//后置++ 先使用，在++   前置则反
+	printf("%d\n", h);
+	printf("%d\n", j);
+
+	int n = (int)3.14;//强制改变类型
+	printf("%d\n", n);
+
+	int k = 2;
+	int l = 3;
+	int m = k && l;//真假命题
+	printf("%d\n", m);
+	
+	int q = 0;
+	int w = 2;
+	int max = 0;
+	//if (q > w)
+	   // max = q;
+//	else
+		//max = w;
+	max = q > w ? q : w;//exp1 ? exp2 : exp3
+	printf("%d\n", max);
+
+	   
+
+	return 0;
+}
