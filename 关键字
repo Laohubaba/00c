@@ -1,0 +1,23 @@
+#include <stdio.h>
+typedef unsigned int u_int;//typedef类型重命名
+void test()
+{
+	int a = 1;
+	a++;
+	printf("%d", a);
+}
+int main()
+{
+	//unsigned int num = 100;
+	u_int num = 100;
+	{
+		int i = 0;
+		while (i < 10)
+		{
+			test();
+			i++;
+		}
+	}
+
+	return 0;
+}
