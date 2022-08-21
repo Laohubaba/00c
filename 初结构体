@@ -1,0 +1,23 @@
+#include<stdio.h>
+//结构体可以创建新的类型
+
+//学生
+struct Stu
+{
+	char name[10];
+		int age;
+		float scoe;
+
+};
+
+int main()
+{
+	struct Stu s = { "黄嘉宇", 20, 45.5 };
+	printf("1: %s %d %lf\n", s.name, s.age, s.scoe);//结构体变量  .  成员变量
+	//结构体指针
+
+	struct Stu* ps = &s;
+	printf("2: %s %d %lf\n", (*ps).name, (*ps).age, (*ps).scoe);
+	printf("3: %s %d %lf\n", ps->name, ps->age, ps->scoe);//结构体指针的使用
+	
+	
